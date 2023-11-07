@@ -33,5 +33,14 @@ class LinkedList {
 
 void LinkedList::insertNode(int data){
     Node* newnode = new Node(data);
-    
+    if (head == NULL){
+        head = newnode;
+        return;
+    }
+    //Traversing the LL
+    Node* temp = head;
+    while (temp->next!= NULL){
+        temp = temp->next;
+    }
+    temp->next = newnode;
 }
