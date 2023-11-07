@@ -63,5 +63,14 @@ void LinkedList::printlist()
     }
 }
 
-void LinkedList::deletenode(int Nodeindex){
+// void LinkedList::deletenode(int Nodeindex){
+// }
+
+int main(){
+    LinkedList list;
+    list.insertNode(5);
+    list.insertNode(2);
+    list.insertNode(17);
+    list.insertNode(53);
+    list.insertNode(51);
 }
