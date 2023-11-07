@@ -44,3 +44,11 @@ void LinkedList::insertNode(int data){
     }
     temp->next = newnode;
 }
+
+void LinkedList::printlist(){
+    Node* temp = head;
+    while(temp!=NULL){
+        cout<<temp->data<<" ";
+        temp = temp->next;
+    }
+}
